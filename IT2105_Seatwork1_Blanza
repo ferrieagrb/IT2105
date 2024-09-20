@@ -1,0 +1,42 @@
+// Grade Sample Calculator
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Grades Calculator");
+        Console.WriteLine(" ");
+
+        Console.Write("Prog1: ");
+            float a = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Prog2: ");
+            float b = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Database: ");
+            float c = Convert.ToInt32(Console.ReadLine());
+        Console.Write("HCI: ");
+            float d = Convert.ToInt32(Console.ReadLine());
+        
+        float ave = (a + b + c + d) / 4;
+                Console.WriteLine(" ");
+                Console.WriteLine("Average: " + ave);
+                Console.WriteLine(" ");
+
+        if (ave > 100)
+        Console.WriteLine ("Invalid Grade") ;
+        else if (ave > 98)
+        Console.WriteLine ("With Highest Honors");
+        else if (ave > 95)
+        Console.WriteLine ("With High Honors");
+        else if (ave > 90)
+        Console.WriteLine ("With Honors");
+        else if (ave > 75)
+        Console.WriteLine ("Passed");
+        else{
+        Console.WriteLine ("Failed") ;
+
+    
+    }
+}
+}
